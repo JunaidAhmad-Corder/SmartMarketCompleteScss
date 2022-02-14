@@ -1,13 +1,14 @@
-@import "../scss/variable";
-@import "../scss/function";
-@import "../scss/header";
-@import "../scss/navbar";
-@import "../scss/feature_banner";
-@import "../scss/main-section";
-@import "../scss/aside_top_new_best";
-@import "../scss/middle_electric";
-@import "../scss/home&applinance";
-@import "../scss/footer_section";
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "Variable";
+@import "Header";
+@import "AsideTop";
+@import "NavBar";
+@import "FeatureBanner";
+@import "Footer";
+@import "Functions";
+@import "RecentlyView";
+@import "MainSection";
+@import "MiddleElectric";
 *{
     margin: 0;
     padding: 0;

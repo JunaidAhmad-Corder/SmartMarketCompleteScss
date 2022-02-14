@@ -1,3 +1,4 @@
+
 .container{
     .row{
         .col-md-3{
@@ -89,7 +90,11 @@
                             visibility: hidden;
                             opacity: 0;
                             button{
-                                @include button;
+                                outline: none;
+                                border: none;
+                                padding: 8px 16px;
+                                background-color: transparent;
+                                color: $black-light;
                                 background-color: $light-gray-3;
                                 text-transform: uppercase;
                                 font-weight: 500;
@@ -356,7 +361,11 @@
                                         visibility: hidden;
                                         opacity: 0;
                                         button{
-                                            @include button;
+                                            outline: none;
+                                            border: none;
+                                            padding: 8px 16px;
+                                            background-color: transparent;
+                                            color: $black-light;
                                             width: 200px;
                                             background-color: $light-gray-3;
                                             font-size: 14px;
@@ -372,7 +381,11 @@
                                         visibility: hidden;
                                         opacity: 0;
                                         .but-1{
-                                            @include button;
+                                            outline: none;
+                                            border: none;
+                                            padding: 8px 16px;
+                                            background-color: transparent;
+                                            color: $black-light;
                                             width: 140px;
                                             background-color: $red;
                                             color: $white;
@@ -383,7 +396,11 @@
                                             }
                                         }
                                         .but-2{
-                                            @include button;
+                                            outline: none;
+                                            border: none;
+                                            padding: 8px 16px;
+                                            background-color: transparent;
+                                            color: $black-light;
                                             margin-left: 3px;
                                             border: 1px solid $smoke;
                                             border-radius: 50px;
@@ -467,7 +484,11 @@
                     bottom: 0;
                     padding: 20px;
                     button{
-                        @include button;
+                        outline: none;
+                        border: none;
+                        padding: 8px 16px;
+                        background-color: transparent;
+                        color: $black-light;
                         border: 2px solid $orange;
                         border-radius: 20px;
                         text-transform: uppercase;
@@ -491,7 +512,13 @@
             position:relative;
         }
         :after{
-            @include after;
+            content: "";
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            width: 80px;
+            height: 3px;
+            background-color: $orange;  
         }
     }
 }
@@ -558,7 +585,11 @@
                     visibility: hidden;
                     opacity: 0;
                     button{
-                        @include button;
+                        outline: none;
+                        border: none;
+                        padding: 8px 16px;
+                        background-color: transparent;
+                        color: $black-light;
                         width: 205px;
                         background-color: $light-grey-2;
                         font-size:14px;
@@ -574,7 +605,11 @@
                     visibility: hidden;
                     opacity: 0;
                     .but-1{
-                        @include button;
+                        outline: none;
+                        border: none;
+                        padding: 8px 16px;
+                        background-color: transparent;
+                        color: $black-light;
                         width: 140px;
                         background-color: $red;
                         color: $white;
@@ -585,7 +620,11 @@
                         }
                     }
                     .but-2{
-                        @include button;
+                        outline: none;
+                        border: none;
+                        padding: 8px 16px;
+                        background-color: transparent;
+                        color: $black-light;
                         margin-left: 3px;
                         border: 1px solid $smoke;
                         border-radius: 50px;
@@ -618,6 +657,137 @@
                     background-color: $light-gray-3;
                     width: 20px;
                     height: 40px;
+                }
+            }
+        }
+    }
+    @media screen and(max-width:375px){
+        .container{
+            .row{
+                .col-md-3{
+                    padding-top: 0 !important;
+                    .deal{
+                        h3{
+                            position: absolute;
+                            left: 14px;
+                            top: 10px;
+                        }
+                    }
+                    .carousel{
+                        margin-top: 60px;
+                        margin-left: 20px;
+                        width: 320px;
+                        .carousel-inner{
+                            .carousel-item{
+                                img{
+                                    max-width: 100%;
+                                    height: auto;
+                                }
+                                .carousel-text{
+                                    text-align: center;
+                                    padding-left: 23px;
+                                }
+                            }
+                        } 
+                        .carousel-control-prev-1,
+                        .carousel-control-next-1{
+                            margin-top: 20px;
+                        }
+                    }
+                    .sale-up{
+                        img{
+                            max-width: 100%;
+                            height: auto;
+                            padding: 20px;
+                        }
+                    }
+                    .latest-product{
+                        h3{
+                            position: absolute;
+                            margin-left: 20px;
+                        }
+                    }
+                    .col-md-3{
+                        margin: 45px 0 0  25px;
+                        .crd-3{
+                            width: 320px;
+                        }
+                    }
+                    .col-md-3{
+                        margin: 45px 0 0  25px;
+                        .crd-4{
+                            width:320px
+                        }
+                    }
+                }
+                .col-md-9{
+                    .owl-carousel-1{
+                        .item{
+                            img{
+                                height: 160px;
+                                object-fit: cover;
+                            }
+                        }
+                        .owl-nav{
+                            position: absolute;
+                            top: -60px;
+                        }
+                    }
+                }
+                .col-md-9{
+                    .nav{
+                        .nav-item{
+                            .nav-link{
+                                font-size: 16px;
+                            }
+                        }
+                        .tab-content{
+                            .tab-pane{
+                                .crd{
+                                    display: grid;
+                                    grid-template-columns: 1fr;
+                                    margin-left: 20px;
+                                    .crd-back{
+                                        width: 280px;
+                                    }
+                                }
+                            }
+                            .tab-pane{
+                                .sale-product{
+                                    display: grid;
+                                    grid-template-columns: 1fr;
+                                    margin-left: 20px;
+                                }
+                                .sale-product-main{
+                                    width: 280px;
+                                }
+                            }
+                        }
+                    }
+                    .crd-4{
+                        .owl-carousel-2{
+                            .item{
+                                width: 260px;
+                                margin:0 0 10px 35px;
+                            }
+                        }
+                        .owl-nav{
+                            display: none;
+                        }
+                    }
+                    .col-md-12{
+                        display: block !important;
+                        .seprate-holder{
+                            display: block;
+                            padding: 10px;
+                            img{
+                                width: 320px;
+                            }
+                            .sep-text{
+                                padding: 10px;
+                            }
+                        }
+                    }
                 }
             }
         }

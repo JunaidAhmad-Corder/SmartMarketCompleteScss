@@ -1,3 +1,4 @@
+
 .header{
     background-color: $top_back;
     .container{
@@ -36,7 +37,7 @@
         }
     }
 }
-@media only screen and (max-width:375px) {
+@media screen and (max-width:375px) {
     .header{
         .container{
             .row{

@@ -156,3 +156,35 @@
         }
     }
 }
+@media screen and (max-width:375px){
+    .container{
+        .row{
+            .col-md-9{
+                .recent{
+                    h4{
+                        font-size: 15px;
+                    }
+                }
+                .owl-carousel-6{
+                    .owl-items{
+                        .card{
+                            width: 290px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .container{
+        .row{
+            .col-md-3{
+                .owl-carousel-5{
+                    .card{
+                        margin-bottom: 20px;
+                        height: 360px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,3 +1,4 @@
+
 .container{
     .row{
         .col-md-3{
@@ -87,7 +88,7 @@
         }
     }
 }
-@media only screen and (max-width:375px){
+@media screen and (max-width:375px){
     .container{
         .row{
             .col-md-3{
@@ -96,12 +97,26 @@
                         .nav-item{
                             a{
                                 width: 350px; 
+                                padding: 10px;
+                            }
+                            ul{
+                                left:14px ;
+                                li{
+                                    width:332px;
+                                    a{
+                                        left: 30px !important;
+                                    }
+                                }
                             }
                         }
                     }
                 }
             }
+            .col-md-6{
+                display: none;
+            }
             .col-md-3{
+                margin-bottom: 10px;
                 text-align: center;
             }
         }

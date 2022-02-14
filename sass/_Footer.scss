@@ -1,7 +1,7 @@
 .container{
     .row{
         .col-md-12{
-            .owl-carousel{
+            .owl-carousel-7{
                 .owl-items{
                     .all{
                         width: 200px;
@@ -114,6 +114,44 @@
                         }
                     }
                 }  
+            }
+        }
+    }
+}
+@media screen and(max-width:375px){
+    .foot{
+        .container{
+            .row{
+                .col-md-3{
+                    .logo{
+                        margin-bottom: 40px;
+                    }
+                    p{
+                        display: none;
+                    }
+                    hr{
+                        padding-top: 40px;
+                    }
+                }
+                .col-md-2{
+                    text-align: center;
+                }
+                .col-md-3{
+                    .input-group{
+                        padding-left: 10px;
+                    }
+                }
+            }
+        }
+    }
+    .container{
+        .row{
+            .col-md-12{
+                .owl-carousel-7{
+                    .owl-items{
+                        margin-left: 90px;
+                    }
+                }
             }
         }
     }

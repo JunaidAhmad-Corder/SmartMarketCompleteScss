@@ -2,7 +2,7 @@
     .row{
         .col-md-12{
             position: relative;
-            .elect{
+            .elect,.home{
                 h4{
                     font-size:18px ;
                     font-weight: 500;
@@ -196,3 +196,36 @@
         }
     }
 }
+@media screen and(max-width:375px){
+  .container{
+      .row{
+          .col-md-12{
+              .elect,.home{
+
+                  display: none;
+              }
+              .nav{
+                //   position: absolute;
+                //   top: 50px;
+                display: none;
+              }
+              .tab-content{
+                  .tab-pane{
+                      .owl-carousel-3{
+                        // margin-top: 40px;
+                        display: none;
+                        .crd-back{
+                            display: none;
+                            // width: 280px;
+                            // margin:0 0 10px 30px;
+                        }
+                      }
+                      .owl-nav{
+                          display: none;
+                      }
+                  }
+              }
+          }
+      }
+  }  
+} 
