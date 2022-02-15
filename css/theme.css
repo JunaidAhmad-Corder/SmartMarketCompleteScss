@@ -11204,7 +11204,7 @@ textarea.form-control-lg {
 }
 .container .row .col-md-3 .carousel .carousel-inner .carousel-item img {
   padding: 40px;
-  width: 270px;
+  max-width: 100%;
   object-fit: cover;
 }
 .container .row .col-md-3 .carousel .carousel-inner .carousel-item .carousel-text {
@@ -11794,9 +11794,13 @@ textarea.form-control-lg {
     margin-left: 20px;
     width: 320px;
   }
+  .container .row .col-md-3 .carousel .carousel-inner .carousel-item {
+    height: 300px;
+  }
   .container .row .col-md-3 .carousel .carousel-inner .carousel-item img {
-    max-width: 100%;
-    height: auto;
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
   }
   .container .row .col-md-3 .carousel .carousel-inner .carousel-item .carousel-text {
     text-align: center;
@@ -11804,7 +11808,7 @@ textarea.form-control-lg {
   }
   .container .row .col-md-3 .carousel .carousel-control-prev-1,
 .container .row .col-md-3 .carousel .carousel-control-next-1 {
-    margin-top: 20px;
+    margin-top: 10px;
   }
   .container .row .col-md-3 .sale-up img {
     max-width: 100%;
@@ -11828,8 +11832,13 @@ textarea.form-control-lg {
     width: 320px;
   }
   .container .row .col-md-9 .owl-carousel-1 .item img {
-    height: 160px;
+    height: 240px;
     object-fit: cover;
+  }
+  .container .row .col-md-9 .owl-carousel-1 .item .coroul-text {
+    position: absolute;
+    left: 110px;
+    bottom: 10px;
   }
   .container .row .col-md-9 .owl-carousel-1 .owl-nav {
     position: absolute;
@@ -11857,9 +11866,6 @@ textarea.form-control-lg {
   .container .row .col-md-9 .crd-4 .owl-carousel-2 .item {
     width: 260px;
     margin: 0 0 10px 35px;
-  }
-  .container .row .col-md-9 .crd-4 .owl-nav {
-    display: none;
   }
   .container .row .col-md-9 .col-md-12 {
     display: block !important;
@@ -12297,7 +12303,7 @@ textarea.form-control-lg {
 }
 .container .row .col-md-9 .owl-carousel-6 .owl-items .card .crd-fl img {
   width: 120px;
-  height: auto;
+  height: 100px;
 }
 .container .row .col-md-9 .owl-carousel-6 .owl-items .card .crd-fl .content {
   padding: 17px;

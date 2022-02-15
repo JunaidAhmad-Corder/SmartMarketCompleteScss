@@ -2,17 +2,22 @@ $(document).ready(function () {
 	$('.owl-carousel-1').owlCarousel({
 		loop:true,
 		margin:10,
-		nav:true,
-		dots:true,
+		// nav:true,
+		// dots:true,
+		resposiveClass:true,
 		responsive:{
 			0:{
-				items:1
+				items:1,
+				nav:true
 			},
 			600:{
-				items:3
+				items:3,
+				nav:false
 			},
 			1000:{
-				items:5
+				items:5,
+				nav:true,
+				loop:false
 			}
 		}
 	})
@@ -115,4 +120,9 @@ $(document).ready(function(){
           $(this).tab('show');
       });
       
+});
+$(document).ready(function(){
+	$(function () {
+		res();
+	  });   
 });
