@@ -11795,7 +11795,10 @@ textarea.form-control-lg {
     width: 320px;
   }
   .container .row .col-md-3 .carousel .carousel-inner .carousel-item {
-    height: 300px;
+    height: 430px;
+  }
+  .container .row .col-md-3 .carousel .carousel-inner .carousel-item:hover .btn {
+    transform: translate(8%);
   }
   .container .row .col-md-3 .carousel .carousel-inner .carousel-item img {
     width: 350px;
@@ -11808,7 +11811,7 @@ textarea.form-control-lg {
   }
   .container .row .col-md-3 .carousel .carousel-control-prev-1,
 .container .row .col-md-3 .carousel .carousel-control-next-1 {
-    margin-top: 10px;
+    margin-top: 35px;
   }
   .container .row .col-md-3 .sale-up img {
     max-width: 100%;
@@ -11832,13 +11835,8 @@ textarea.form-control-lg {
     width: 320px;
   }
   .container .row .col-md-9 .owl-carousel-1 .item img {
-    height: 240px;
+    height: 140px;
     object-fit: cover;
-  }
-  .container .row .col-md-9 .owl-carousel-1 .item .coroul-text {
-    position: absolute;
-    left: 110px;
-    bottom: 10px;
   }
   .container .row .col-md-9 .owl-carousel-1 .owl-nav {
     position: absolute;

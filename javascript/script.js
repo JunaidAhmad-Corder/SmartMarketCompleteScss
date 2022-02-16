@@ -1,13 +1,10 @@
-$(document).ready(function () {
 	$('.owl-carousel-1').owlCarousel({
 		loop:true,
 		margin:10,
-		// nav:true,
-		// dots:true,
 		resposiveClass:true,
 		responsive:{
 			0:{
-				items:1,
+				items:2,
 				nav:true
 			},
 			600:{
@@ -21,26 +18,26 @@ $(document).ready(function () {
 			}
 		}
 	})
-});
-$(document).ready(function () {
-	$('.owl-carousel-2').owlCarousel({
+$('.owl-carousel-2').owlCarousel({
 		loop:true,
 		margin:10,
-		nav:true,
+		responsiveClass:true,
 		responsive:{
 			0:{
-				items:0
+				items:1,
+				nav:true
 			},
 			600:{
-				items:1
+				items:1,
+				nav:false
 			},
 			1000:{
-				items:3
+				items:3,
+				nav:true,
+				loop:false
 			}
 		}
 	})
-});
-$(document).ready(function () {
 	$('.owl-carousel-3').owlCarousel({
 		loop:true,
 		margin:10,
@@ -57,53 +54,54 @@ $(document).ready(function () {
 			}
 		}
 	})
-});
-$(document).ready(function () {
 	$('.owl-carousel-5').owlCarousel({
 		loop:true,
 		margin:10,
-		nav:true,
+		resposiveClass:true,
 		responsive:{
 			0:{
-				items:0
+				items:1,
+				nav:true,
 			},
 			600:{
-				items:1
+				items:1,
+				nav:false,
 			},
 			1000:{
-				items:1
+				items:1,
+				nav:true,
+				loop:false
 			}
 		}
 	})
-});
-$(document).ready(function () {
 	$('.owl-carousel-6').owlCarousel({
 		loop:true,
 		margin:10,
-		nav:true,
+		resposiveClass:true,
 		responsive:{
 			0:{
-				items:0
+				items:1,
+				nav:true
 			},
 			600:{
-				items:1
+				items:1,
+				nav:false
 			},
 			1000:{
-				items:3
+				items:3,
+				nav:true,
+				loop:false
 			}
 		}
 	})
-});
-$(document).ready(function () {
 	$('.owl-carousel-7').owlCarousel({
 		loop:false,
 		margin:10,
-		nav:false,
 		autoplay:true,
 		autoplaySpeed:500,
 		responsive:{
 			0:{
-				items:0
+				items:1
 			},
 			600:{
 				items:1
@@ -113,16 +111,7 @@ $(document).ready(function () {
 			}
 		}
 	})
-});
-$(document).ready(function(){
     $("ul.nav-bars a").click(function (e) {
         e.preventDefault();  
           $(this).tab('show');
       });
-      
-});
-$(document).ready(function(){
-	$(function () {
-		res();
-	  });   
-});
